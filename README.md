@@ -1,5 +1,5 @@
 # IntFilter
-Class for first-order integrators
+Class for first-order integrators  
 Written by Dan Oates (WPI Class of 2020)
 
 ### Description
