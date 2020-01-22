@@ -8,17 +8,12 @@
  * @brief Constructor
  * @param fs Sample frequency
  */
-IntFilter::IntFilter(float fs);
+IntFilter::IntFilter(float fs) :
+	LTIFilter()
 {
-	// Allocate data
-	const uint8_t A = 2; float a[A];
-	const uint8_t B = 1; float b[B];
-
-	// Assign coefficients
+	A = 2;
+	B = 1;
 	a[0] = +fs;
 	a[1] = -fs;
 	b[0] = 1.0f;
-
-	// Construct filter
-	(*this) = LTIFilter(A, a, B, b);
 }

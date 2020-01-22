@@ -13,4 +13,4 @@ class IntFilter : public LTIFilter
 {
 public:
 	IntFilter(float fs);
-}
+};
